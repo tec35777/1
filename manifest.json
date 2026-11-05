@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Grok Slow Downloader",
+  "version": "0.1.0",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "storage",
+    "downloads",
+    "alarms",
+    "scripting",
+    "activeTab",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://grok.com/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
